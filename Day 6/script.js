@@ -5,8 +5,8 @@ let count = 0;
 let found = false;
 let codedText = [], currentPacket = [], tempSet = [];
 
-//Part 1: Set {if count} to 4 and tempset.size} to 4
-//Part 2: Set {if count} to 14 and tempset.size} to 14
+//Part 1: Set {if count} to 4 and {tempSet.size} to 4
+//Part 2: Set {if count} to 14 and {tempSet.size} to 14
 
 function findMarker(code) {
     codedText = code.split('');
@@ -17,7 +17,7 @@ function findMarker(code) {
         } else {
             tempSet = new Set(currentPacket);
             if (tempSet.size === 14) {
-                console.log(`found dis bitch at ${count}`)
+                console.log(`Found at ${count}`)
                 console.log(tempSet);
                 found = true;
                 break;
