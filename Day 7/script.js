@@ -38,7 +38,6 @@ function doCommand(command) {
         value = command.match(/\d+/g);
         
         addFiles(value);
-
     }
 }
 
@@ -66,7 +65,6 @@ async function processLineByLine() {
         };
     }
     
-    // console.log(JSON.stringify(allDirectories, null, 4));
     console.log(`All directories with total size of at most 100k, sum up to: ${sum}`);
     console.log(`The smallest directory to free up at least ${spaceNeeded} memory, has a total of: ${smallestDeletion}`);
 }
